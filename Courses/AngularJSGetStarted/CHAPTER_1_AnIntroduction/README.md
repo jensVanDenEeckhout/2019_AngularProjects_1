@@ -1,7 +1,12 @@
-# 2019_AngularProjects_1
+
+# AngularJS: Get Started
+
+## 1. An Introduction
 
 
-## Global variables are bad
+### 1.8  The IIFE
+
+#### Global variables are bad
 
 	Easily overwritten
 	Try to avoid!
@@ -16,3 +21,5 @@
 
 	immediately invoked function expression ( IIFE ) (pronounce: iffy )
 	(function(){}());
+
+

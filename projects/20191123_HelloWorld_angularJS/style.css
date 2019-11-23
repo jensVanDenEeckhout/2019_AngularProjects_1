@@ -1,0 +1,10 @@
+// Very simple CSS to mark an invalid input field red
+// and a valid input field green. It doesn't look very
+// nice, but it's an good example.
+
+.has-error {
+    border-color: red;
+}
+.has-success {
+    border-color: green;
+}

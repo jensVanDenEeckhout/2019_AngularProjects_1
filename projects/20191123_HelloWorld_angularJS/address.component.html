@@ -1,0 +1,29 @@
+<!-- 
+This is the HTML template which describes our component. It contains two input fields,
+both with form validation. Note that we used 'ng-form' in order to enable Angular's form
+validation. We cannot use a normal HTML 'form' as form are not allowed to be nested by the
+HTML standard. 
+
+Note that we refer to the controller by "$ctrl". This is the default name provided by AngularJs.
+-->
+
+<div ng-form name="addressComponentForm">
+  
+    <div class="form-group has-feedback" ng-class="addressComponentForm.street.$invalid? 'has-error' : 'has-success'">
+        Street: <input type="text" 
+                       required
+                       name="street"
+                       ng-minlength="2"
+                       ng-model="$ctrl.address.street"
+                       ng-class="addressComponentForm.street.$invalid? 'has-error' : 'has-success'">
+    </div>
+    <div class="form-group has-feedback" ng-class="addressComponentForm.city.$invalid? 'has-error' : 'has-success'">
+        City: <input type="text" 
+                     required
+                     name="city"
+                     ng-minlength="2"
+                     ng-model="$ctrl.address.city"
+                     ng-class="addressComponentForm.city.$invalid? 'has-error' : 'has-success'">
+    </div>
+
+</div>
